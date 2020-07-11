@@ -5,7 +5,7 @@ const entries = require('object.entries');
 
 /* eslint-disable global-require */
 const allRules = {
-  'jsx-no-random-key': require('./lib/rules/jsx-no-random-key'),
+  'jsx-no-random-key': require('./lib/rules/jsx-no-random-key')
 };
 /* eslint-enable */
 
@@ -36,7 +36,7 @@ module.exports = {
         }
       },
       rules: {
-        'react-extended/jsx-no-random-key': 2,
+        'react-extended/jsx-no-random-key': 2
       }
     },
     all: {
