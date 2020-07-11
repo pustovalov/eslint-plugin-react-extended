@@ -40,8 +40,8 @@ describe('configurations', () => {
   it('should export a ‘recommended’ configuration', () => {
     assert(plugin.configs.recommended);
     Object.keys(plugin.configs.recommended.rules).forEach((configName) => {
-      assert.equal(configName.indexOf('react/'), 0);
-      const ruleName = configName.slice('react/'.length);
+      assert.equal(configName.indexOf('react-extended/'), 0);
+      const ruleName = configName.slice('react-extended/'.length);
       assert(plugin.rules[ruleName]);
     });
 
@@ -60,13 +60,13 @@ describe('configurations', () => {
     assert(plugin.configs.all);
 
     Object.keys(plugin.configs.all.rules).forEach((configName) => {
-      assert.equal(configName.indexOf('react/'), 0);
+      assert.equal(configName.indexOf('react-extended/'), 0);
       assert.equal(plugin.configs.all.rules[configName], 2);
     });
 
     ruleFiles.forEach((ruleName) => {
       const inDeprecatedRules = Boolean(plugin.deprecatedRules[ruleName]);
-      const inAllConfig = Boolean(plugin.configs.all.rules[`react/${ruleName}`]);
+      const inAllConfig = Boolean(plugin.configs.all.rules[`react-extended/${ruleName}`]);
       assert(inDeprecatedRules ^ inAllConfig); // eslint-disable-line no-bitwise
     });
   });

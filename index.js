@@ -14,7 +14,7 @@ function filterRules(rules, predicate) {
 }
 
 function configureAsError(rules) {
-  return fromEntries(Object.keys(rules).map((key) => [`react/${key}`, 2]));
+  return fromEntries(Object.keys(rules).map((key) => [`react-extended/${key}`, 2]));
 }
 
 const activeRules = filterRules(allRules, (rule) => !rule.meta.deprecated);
