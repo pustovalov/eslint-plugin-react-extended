@@ -64,7 +64,7 @@
     "eslint": "^6 || ^7"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=10"
   },
   "keywords": [
     "eslint",
