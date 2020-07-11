@@ -1,19 +1,19 @@
 {
-  "name": "eslint-plugin-react",
-  "version": "7.20.3",
-  "author": "Yannick Croissant <yannick.croissant+npm@gmail.com>",
+  "name": "eslint-plugin-react-extended",
+  "version": "0.0.1",
+  "author": "Pavel Pustovalov <pavel.pustovalov@gmail.com>",
   "description": "React specific linting rules for ESLint",
   "main": "index.js",
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint ./",
-    "postlint": "npm run type-check",
-    "pretest": "npm run lint",
-    "test": "npm run unit-test",
+    "postlint": "yarn run type-check",
+    "pretest": "yarn run lint",
+    "test": "yarn run unit-test",
     "type-check": "tsc",
     "unit-test": "istanbul cover node_modules/mocha/bin/_mocha tests/lib/**/*.js tests/util/**/*.js tests/index.js",
     "generate-list-of-rules": "md-magic --path README.md",
-    "generate-list-of-rules:check": "npm run generate-list-of-rules && git diff --exit-code README.md"
+    "generate-list-of-rules:check": "yarn run generate-list-of-rules && git diff --exit-code README.md"
   },
   "files": [
     "LICENSE",
@@ -23,10 +23,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yannickcr/eslint-plugin-react"
+    "url": "https://github.com/pustovalov/eslint-plugin-react-extended"
   },
-  "homepage": "https://github.com/yannickcr/eslint-plugin-react",
-  "bugs": "https://github.com/yannickcr/eslint-plugin-react/issues",
+  "homepage": "https://github.com/pustovalov/eslint-plugin-react-extended",
+  "bugs": "https://github.com/pustovalov/eslint-plugin-react-extended/issues",
   "dependencies": {
     "array-includes": "^3.1.1",
     "array.prototype.flatmap": "^1.2.3",
@@ -61,7 +61,7 @@
     "typescript-eslint-parser": "^20.1.1"
   },
   "peerDependencies": {
-    "eslint": "^3 || ^4 || ^5 || ^6 || ^7"
+    "eslint": "^6 || ^7"
   },
   "engines": {
     "node": ">=4"
