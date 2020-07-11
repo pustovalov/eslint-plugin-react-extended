@@ -154,43 +154,7 @@ Enable the rules that you would like to use.
 ## JSX-specific rules
 
 <!-- AUTO-GENERATED-CONTENT:START (JSX_RULES) -->
-* [react/jsx-boolean-value](docs/rules/jsx-boolean-value.md): Enforce boolean attributes notation in JSX (fixable)
-* [react/jsx-child-element-spacing](docs/rules/jsx-child-element-spacing.md): Ensures inline tags are not rendered without spaces between them
-* [react/jsx-closing-bracket-location](docs/rules/jsx-closing-bracket-location.md): Validate closing bracket location in JSX (fixable)
-* [react/jsx-closing-tag-location](docs/rules/jsx-closing-tag-location.md): Validate closing tag location for multiline JSX (fixable)
-* [react/jsx-curly-brace-presence](docs/rules/jsx-curly-brace-presence.md): Disallow unnecessary JSX expressions when literals alone are sufficient or enfore JSX expressions on literals in JSX children or attributes (fixable)
-* [react/jsx-curly-newline](docs/rules/jsx-curly-newline.md): Enforce consistent line breaks inside jsx curly (fixable)
-* [react/jsx-curly-spacing](docs/rules/jsx-curly-spacing.md): Enforce or disallow spaces inside of curly braces in JSX attributes (fixable)
-* [react/jsx-equals-spacing](docs/rules/jsx-equals-spacing.md): Disallow or enforce spaces around equal signs in JSX attributes (fixable)
-* [react/jsx-filename-extension](docs/rules/jsx-filename-extension.md): Restrict file extensions that may contain JSX
-* [react/jsx-first-prop-new-line](docs/rules/jsx-first-prop-new-line.md): Ensure proper position of the first property in JSX (fixable)
-* [react/jsx-fragments](docs/rules/jsx-fragments.md): Enforce shorthand or standard form for React fragments (fixable)
-* [react/jsx-handler-names](docs/rules/jsx-handler-names.md): Enforce event handler naming conventions in JSX
-* [react/jsx-indent](docs/rules/jsx-indent.md): Validate JSX indentation (fixable)
-* [react/jsx-indent-props](docs/rules/jsx-indent-props.md): Validate props indentation in JSX (fixable)
-* [react/jsx-key](docs/rules/jsx-key.md): Report missing `key` props in iterators/collection literals
-* [react/jsx-max-depth](docs/rules/jsx-max-depth.md): Validate JSX maximum depth
-* [react/jsx-max-props-per-line](docs/rules/jsx-max-props-per-line.md): Limit maximum of props on a single line in JSX (fixable)
-* [react/jsx-no-bind](docs/rules/jsx-no-bind.md): Prevents usage of Function.prototype.bind and arrow functions in React component props
-* [react/jsx-no-comment-textnodes](docs/rules/jsx-no-comment-textnodes.md): Comments inside children section of tag should be placed inside braces
-* [react/jsx-no-duplicate-props](docs/rules/jsx-no-duplicate-props.md): Enforce no duplicate props
-* [react/jsx-no-literals](docs/rules/jsx-no-literals.md): Prevent using string literals in React component definition
 * [react/jsx-no-random-key](docs/rules/jsx-no-random-key.md): Prevent usage of random value for `key` prop
-* [react/jsx-no-script-url](docs/rules/jsx-no-script-url.md): Forbid `javascript:` URLs
-* [react/jsx-no-target-blank](docs/rules/jsx-no-target-blank.md): Forbid `target="_blank"` attribute without `rel="noreferrer"`
-* [react/jsx-no-undef](docs/rules/jsx-no-undef.md): Disallow undeclared variables in JSX
-* [react/jsx-no-useless-fragment](docs/rules/jsx-no-useless-fragment.md): Disallow unnecessary fragments (fixable)
-* [react/jsx-one-expression-per-line](docs/rules/jsx-one-expression-per-line.md): Limit to one expression per line in JSX (fixable)
-* [react/jsx-pascal-case](docs/rules/jsx-pascal-case.md): Enforce PascalCase for user-defined JSX components
-* [react/jsx-props-no-multi-spaces](docs/rules/jsx-props-no-multi-spaces.md): Disallow multiple spaces between inline JSX props (fixable)
-* [react/jsx-props-no-spreading](docs/rules/jsx-props-no-spreading.md): Prevent JSX prop spreading
-* [react/jsx-sort-default-props](docs/rules/jsx-sort-default-props.md): Enforce default props alphabetical sorting
-* [react/jsx-sort-props](docs/rules/jsx-sort-props.md): Enforce props alphabetical sorting (fixable)
-* [react/jsx-space-before-closing](docs/rules/jsx-space-before-closing.md): Validate spacing before closing bracket in JSX (fixable)
-* [react/jsx-tag-spacing](docs/rules/jsx-tag-spacing.md): Validate whitespace in and around the JSX opening and closing brackets (fixable)
-* [react/jsx-uses-react](docs/rules/jsx-uses-react.md): Prevent React to be marked as unused
-* [react/jsx-uses-vars](docs/rules/jsx-uses-vars.md): Prevent variables used in JSX to be marked as unused
-* [react/jsx-wrap-multilines](docs/rules/jsx-wrap-multilines.md): Prevent missing parentheses around multilines JSX (fixable)
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Other useful plugins
