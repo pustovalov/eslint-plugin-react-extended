@@ -10,13 +10,13 @@ React specific linting rules for ESLint
 Install [ESLint](https://www.github.com/eslint/eslint) either locally or globally. (Note that locally, per project, is strongly preferred)
 
 ```sh
-$ npm install eslint --save-dev
+$ yarn add eslint --dev
 ```
 
 If you installed `ESLint` globally, you have to install React plugin globally too. Otherwise, install it locally.
 
 ```sh
-$ npm install eslint-plugin-react --save-dev
+$ yarn add eslint-plugin-react-extended --dev
 ```
 
 # Configuration
@@ -26,7 +26,7 @@ Use [our preset](#recommended) to get reasonable defaults:
 ```json
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react-extended/recommended"
   ]
 ```
 
@@ -67,7 +67,7 @@ Add "react" to the plugins section.
 ```json
 {
   "plugins": [
-    "react"
+    "react-extended"
   ]
 }
 ```
@@ -90,8 +90,7 @@ Enable the rules that you would like to use.
 
 ```json
   "rules": {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
+    "react-extended/jsx-no-random-key": "error",
   }
 ```
 
