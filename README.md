@@ -1,7 +1,11 @@
 ESLint-plugin-React-extended
 ============================
 
-[![Maintenance Status][status-image]][status-url] [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][deps-image]][deps-url] [![Coverage Status][coverage-image]][coverage-url] [![Code Climate][climate-image]][climate-url] [![Tidelift][tidelift-image]][tidelift-url]
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url] 
+[![Dependency Status][deps-image]][deps-url] 
+[![Coverage Status][coverage-image]][coverage-url] 
+[![Code Climate][climate-image]][climate-url] 
 
 React specific linting rules for ESLint
 
@@ -140,26 +144,17 @@ This pairs well with the `eslint:all` rule.
 
 # License
 
-ESLint-plugin-React is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+ESLint-plugin-React-extended is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
 
-[npm-url]: https://npmjs.org/package/eslint-plugin-react
-[npm-image]: https://img.shields.io/npm/v/eslint-plugin-react.svg
+[npm-url]: https://npmjs.org/package/eslint-plugin-react-extended
+[npm-image]: https://img.shields.io/npm/v/eslint-plugin-react-extended.svg
 
-[travis-url]: https://travis-ci.org/yannickcr/eslint-plugin-react
-[travis-image]: https://img.shields.io/travis/yannickcr/eslint-plugin-react/master.svg
+[travis-url]: https://travis-ci.org/pustovalov/eslint-plugin-react-extended
+[travis-image]: https://img.shields.io/travis/pustovalov/eslint-plugin-react-extended/master.svg
 
-[deps-url]: https://david-dm.org/yannickcr/eslint-plugin-react
-[deps-image]: https://img.shields.io/david/dev/yannickcr/eslint-plugin-react.svg
+[coverage-url]: https://coveralls.io/r/pustovalov/eslint-plugin-react-extended?branch=master
+[coverage-image]: https://img.shields.io/coveralls/pustovalov/eslint-plugin-react-extended/master.svg
 
-[coverage-url]: https://coveralls.io/r/yannickcr/eslint-plugin-react?branch=master
-[coverage-image]: https://img.shields.io/coveralls/yannickcr/eslint-plugin-react/master.svg
-
-[climate-url]: https://codeclimate.com/github/yannickcr/eslint-plugin-react
-[climate-image]: https://img.shields.io/codeclimate/maintainability/yannickcr/eslint-plugin-react.svg
-
-[status-url]: https://github.com/yannickcr/eslint-plugin-react/pulse
-[status-image]: https://img.shields.io/github/last-commit/yannickcr/eslint-plugin-react.svg
-
-[tidelift-url]: https://tidelift.com/subscription/pkg/npm-eslint-plugin-react?utm_source=npm-eslint-plugin-react&utm_medium=referral&utm_campaign=readme
-[tidelift-image]: https://tidelift.com/badges/github/yannickcr/eslint-plugin-react?style=flat
+[climate-url]: https://codeclimate.com/github/pustovalov/eslint-plugin-react-extended
+[climate-image]: https://img.shields.io/codeclimate/maintainability/pustovalov/eslint-plugin-react-extended.svg
