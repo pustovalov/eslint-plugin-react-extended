@@ -3,7 +3,6 @@ ESLint-plugin-React-extended
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url] 
-[![Dependency Status][deps-image]][deps-url] 
 [![Coverage Status][coverage-image]][coverage-url] 
 [![Code Climate][climate-image]][climate-url] 
 
