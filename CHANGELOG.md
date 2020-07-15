@@ -7,3 +7,6 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 
 ### Added
 * [`jsx-no-random-key`][]: Prevent usage of random value for `key` prop
+
+
+[`jsx-no-random-key`]: docs/rules/jsx-no-random-key.md
