@@ -7,7 +7,7 @@ const ruleListItems = Object.keys(rules)
   .map((id) => {
     const {meta} = rules[id];
     const {fixable, docs} = meta;
-    return `* [react/${id}](docs/rules/${id}.md): ${docs.description}${fixable ? ' (fixable)' : ''}`;
+    return `* [react-extended/${id}](docs/rules/${id}.md): ${docs.description}${fixable ? ' (fixable)' : ''}`;
   });
 
 const BASIC_RULES = () => ruleListItems.filter((rule) => !rule.includes('react/jsx-')).join('\n');
