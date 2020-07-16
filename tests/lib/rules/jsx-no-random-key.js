@@ -69,9 +69,10 @@ ruleTester.run('jsx-no-random-key', rule, {
     {
       code: '[1, 2, 3]?.map(x => <BabelEslintApp key={x} />)',
       parser: parsers.BABEL_ESLINT
-    }
+    },
+    {code: 'collection.push(<App key="some_key" />);'}
   ],
-  invalid: [].concat(
+  invalid: [
     {
       code: '<App key={nanoid()} />',
       errors: [{message: ERROR_MESSAGE}]
@@ -149,6 +150,10 @@ ruleTester.run('jsx-no-random-key', rule, {
       parser: parsers.BABEL_ESLINT,
       settings,
       errors: [{message: ERROR_MESSAGE}]
+    },
+    {
+      code: 'collection.push(<App key={nanoid()} />);',
+      errors: [{message: ERROR_MESSAGE}]
     }
-  )
+  ]
 });
