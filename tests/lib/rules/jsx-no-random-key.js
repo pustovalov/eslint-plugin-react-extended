@@ -38,7 +38,7 @@ const ERROR_MESSAGE = 'Don\'t use random value for "key" prop';
 const ruleTester = new RuleTester({parserOptions});
 
 ruleTester.run('jsx-no-random-key', rule, {
-  valid: [
+  valid: parsers.all([
     {code: 'fn()'},
     {code: '[1, 2, 3].map(function () {})'},
     {code: '<App />;'},
@@ -52,15 +52,15 @@ ruleTester.run('jsx-no-random-key', rule, {
     {code: 'foo(() => <div />);'},
     {
       code: 'foo(() => <></>);',
-      parser: parsers.BABEL_ESLINT
+      features: ['fragment'],
     },
     {
       code: '<></>;',
-      parser: parsers.BABEL_ESLINT
+      features: ['fragment'],
     },
     {
       code: '[<React.Fragment key={1}>1</React.Fragment>];',
-      parser: parsers.BABEL_ESLINT
+      features: ['fragment'],
     },
     {code: '[{uuid: 1}, {uuid: 2}, {uuid: 3}].map(x => { return <App key={x.uuid} /> });'},
     {code: '[{cuid: 1}, {cuid: 2}, {cuid: 3}].map(x => { return <App key={x.cuid} /> });'},
@@ -68,11 +68,11 @@ ruleTester.run('jsx-no-random-key', rule, {
     {code: '[{id: 1}, {id: 2}, {id: 3}].map(x => { return <App key={x.id} /> });'},
     {
       code: '[1, 2, 3]?.map(x => <BabelEslintApp key={x} />)',
-      parser: parsers.BABEL_ESLINT
+      features: ['no-default'],
     },
     {code: 'collection.push(<App key="some_key" />);'}
-  ],
-  invalid: [
+  ]),
+  invalid: parsers.all([
     {
       code: '<App key={nanoid()} />',
       errors: [{message: ERROR_MESSAGE}]
@@ -131,23 +131,23 @@ ruleTester.run('jsx-no-random-key', rule, {
     },
     {
       code: '[1, 2, 3]?.map(x => <BabelEslintApp key={nanoid()} />)',
-      parser: parsers.BABEL_ESLINT,
+      features: ['no-default'],
       errors: [{message: ERROR_MESSAGE}]
     },
-    parsers.TS({
+    {
       code: '[1, 2, 3]?.map(x => <TypescriptEslintApp key={nanoid()} />)',
-      parser: parsers['@TYPESCRIPT_ESLINT'],
+      features: ['ts'],
       errors: [{message: ERROR_MESSAGE}]
-    }),
+    },
     {
       code: '[1, 2, 3].map(x => <React.Fragment key={nanoid()}>{x}</React.Fragment>);',
-      parser: parsers.BABEL_ESLINT,
+      features: ['fragment'],
       settings,
       errors: [{message: ERROR_MESSAGE}]
     },
     {
       code: '[<React.Fragment key={nanoid()}>1</React.Fragment>];',
-      parser: parsers.BABEL_ESLINT,
+      features: ['fragment'],
       settings,
       errors: [{message: ERROR_MESSAGE}]
     },
@@ -155,5 +155,5 @@ ruleTester.run('jsx-no-random-key', rule, {
       code: 'collection.push(<App key={nanoid()} />);',
       errors: [{message: ERROR_MESSAGE}]
     }
-  ]
+  ])
 });
