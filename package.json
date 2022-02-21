@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-extended",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "Pavel Pustovalov <pavel.pustovalov@gmail.com>",
   "description": "React specific linting rules for ESLint",
   "main": "index.js",
