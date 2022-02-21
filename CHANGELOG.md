@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
+## [0.0.8] - 2022-02-21
+* Add ESLint 8 support
+
 ## [0.0.5] - 2021-09-14
 
 ### Changed
